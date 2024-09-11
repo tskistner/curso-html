@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section>
+        <h2>Cadastro</h2>
+        <form>
+            <label>Nome</label>
+            <input type="text" placeholder="Digite seu nome">
+            <br />
+            <label>Email</label>
+            <input type="text" placeholder="Digite seu email">
+            <br />
+            <label>Contatos</label>
+            <input type="number" placeholder="Digite seu número">
+            <br />
+            <label>Idade</label>
+            <select>
+                <option></option>
+                <option> menor de 18 anos </option>
+                <option> 18 - 24 </option>
+                <option> 25 - 29 </option>
+                <option> 30 - 39 </option>
+                <option> 40 - 49 </option>
+                <option> 50 - 59 </option>
+                <option> +60 </option>
+            </select>
+            <br />
+            <input type="checkbox"><label>Permissão para publicar post</label>
+            <br />
+            <label>Caso queira deixar um comentário, tirar uma dúvida ou contar uma história, escreva aqui</label>
+            <br />
+            <input type="radio" name="tipoTexto">Elogio</input>
+            <input type="radio" name="tipoTexto">Crítica</input>
+            <input type="radio" name="tipoTexto">Meu relato</input>
+            <input type="radio" name="tipoTexto">Dúvida</input>
+            <br />
+            <textarea placeholder="Digite um comentário" cols="50" rows="10"></textarea>
+            <br />
+            <button>Enviar</button>
+        </form>
+    </section>
+
+    <hr/>
+
+    <section>
+        <h2>Avaliação</h2>
+        <form>
+            <label>Caso queira deixar um comentário, relatar uma dúvida, deixe aqui</label>
+            <br/>
+            <textarea cols="50" rows="10"></textarea>
+            <br/>
+            <input type="radio" name="nota"><label>Não gostei do blog</label>
+            <input type="radio" name="nota"><label>Pode melhorar</label>
+            <input type="radio" name="nota"><label>Não está ruim, mas não está bom</label>
+            <input type="radio" name="nota"><label>Blog bom</label>
+            <input type="radio" name="nota"><label>Blog perfeito!</label>
+            <br/>
+            <button>Enviar avaliação</button>
+            <a href="blog.html">Voltar a página inicial</a>
+        </form>
+    </section>
+</body>
+
+</html>
