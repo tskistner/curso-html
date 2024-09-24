@@ -1,0 +1,30 @@
+.borda {
+    background: linear-gradient(to left, pink, rgb(151, 32, 52));
+}
+
+.fundo {
+    background-color: white;
+    padding: 15px;
+}
+
+.borda-menor {
+    width: 20%;
+    padding: 8px;
+}
+
+.borda-maior {
+    padding: 15px;
+}
+
+.alinhar-direita {
+    float: left;
+}
+
+.borda-esquerda {    
+    margin-left: 20%;
+}
+
+.menu {
+    float: left;
+    padding: 10px;   
+}
