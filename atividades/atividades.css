@@ -1,0 +1,52 @@
+.caixa { /*Classe estrutural*/
+    width: 20%;
+    height: 40vh;
+    margin: 10px;
+    float: left;
+    padding: 20px;
+}
+
+.caixa-azul {/*Modificador*/
+    background-color: rgb(0, 136, 255);
+    border: 2px solid blue;
+}
+
+.caixa-roxo {/*Modificador*/
+    background-color: rgb(98, 0, 255);
+    border: 2px solid rgb(22, 2, 37);
+}
+
+.caixa-rosa {/*Modificador*/
+    background-color: rgb(228, 154, 201);
+    border: 2px solid palevioletred;
+}
+
+.secoes {
+    border-bottom: 2px dashed #6200ff;
+    min-height: 60vh;
+}
+
+.campo {
+    padding: 5px;
+    border: 1px solid purple;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.botao {
+    padding: 5px;
+    background-color: purple;
+    min-width: 180px;
+    border: 1px solid purple;
+    border-radius: 5px;
+}
+
+.formulario {
+    margin-left: 50%;
+}
+
+.imagem-formulario {
+    margin-left: 5%;
+    width: 100px;
+    height: 100px;
+}
