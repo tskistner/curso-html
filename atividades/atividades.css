@@ -50,3 +50,79 @@
     width: 100px;
     height: 100px;
 }
+
+.caixa-bloco {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    color:white;
+}
+
+.bloco {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color:#6200ff;
+    padding: 30px;
+}
+
+.menu a:hover {
+    background-color: bisque;
+}
+
+.menu-composto {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    min-height: 300px;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #6200ff;
+    border-radius: 10px;
+    color:#6200ff;
+    font-size: large;
+    font-weight: bold;
+}
+
+.card img {
+    width: 200px;
+    height: 250px;
+}
+
+.card button {
+    padding: 10px 30px 10px 30px;
+    color: white;
+    background-color: #6200ff;
+    border: 1px solid #6200ff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.bloco-linha {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;    
+    flex-wrap: wrap;
+}
