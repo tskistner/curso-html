@@ -126,3 +126,49 @@
     justify-content: space-evenly;    
     flex-wrap: wrap;
 }
+
+.caixa-estatica {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    position: static;
+}
+
+.caixa-relativa {
+    width: 200px;
+    height: 200px;
+    border: 1px solid purple;
+    position: relative;
+    top: 20px;
+    bottom: 50px;
+    left: 100px;
+    right: 70px;
+}
+
+.caixa-fixa {
+    width: 200px;
+    height: 200px;
+    border: 1px solid blue;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: beige;
+    z-index: 1;
+}
+
+.caixa-grudada {
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    position: sticky;
+    top: 0;
+    background-color: beige;
+}
+
+.caixa-absoluta {
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgb(0, 179, 255);
+    position: absolute;
+    bottom: 50px;
+}
