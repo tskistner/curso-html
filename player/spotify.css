@@ -1,0 +1,42 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+header {    
+    border-bottom: 1px solid grey;
+    align-items: center;
+    align-content: center;
+}
+
+header, nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+header li {
+    padding: 30px;
+    list-style: none;
+    font-weight: bold;
+}
+
+header li:hover {
+    background-color: rgb(20, 19, 19, 0.866);
+}
+
+header button {
+    background-color: darkgreen;
+    border-radius: 20px;
+}
+
+header input {
+    border-radius: 10px;
+    height: 30px;
+}
+
+@media (max-width: 600px) {
+    header, nav ul {
+        flex-direction: column;
+    }
+}
