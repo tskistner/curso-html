@@ -1,0 +1,65 @@
+[dt-info] {
+	background-color: blue;
+}
+
+.container, ul {
+	display: flex;
+	flex-direction: row;
+}
+
+ul {	
+	justify-content: space-around;
+}
+
+.container {	
+	justify-content: center;
+}
+
+input:hover {
+	border: 2px solid red;
+}
+
+.campo-checkbox:checked {
+	box-shadow: 0 0 0 2px;
+}
+
+.info-oculta{
+	display: none;
+}
+
+.mostrar-info:hover + .info-oculta{
+	display: block;
+}
+
+.menu-oculto {
+	display: none;
+	position: absolute;
+}
+
+.menu-hover:hover .menu-oculto {
+	display: block;
+}
+
+.texto-brinde {
+	display: none;
+}
+
+button:hover + .texto-brinde {
+	display: block;
+}
+
+.tooltip {
+	display: none;
+	position:absolute;
+	background-color: white;
+}
+
+.input-tooltip:hover .tooltip {
+	display: block;
+}
+
+@media(max-width: 450px) {
+	body {
+		background-color: brown;
+	}
+}
