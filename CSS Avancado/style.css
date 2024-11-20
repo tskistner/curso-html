@@ -1,31 +1,45 @@
-div {
+.atividade1 div {
   background-color: #b6b4d4;
 }
-
-h1, h2, h3, p {
+.atividade1 h1,
+.atividade1 h2,
+.atividade1 h3,
+.atividade1 p {
   color: #6e8a96;
 }
-
-input {
+.atividade1 input {
   padding: 8px;
   border: 1px solid #5d707f;
 }
-
-button {
+.atividade1 button {
   padding: 8px;
   border: 1px solid #5d707f;
   background-color: #5d707f;
 }
-
-form .campos, form button, form textarea, form input {
+.atividade1 form .campos, .atividade1 form button, .atividade1 form textarea, .atividade1 form input {
   border: 3px solid #6e8a96;
   padding: 10px;
 }
-form .campos:hover, form button:hover, form textarea:hover, form input:hover {
+.atividade1 form .campos:hover, .atividade1 form button:hover, .atividade1 form textarea:hover, .atividade1 form input:hover {
   border-color: #66ced7;
 }
-form button {
+.atividade1 form button {
   background-color: #6e8a96;
+}
+
+.atividade2 .titulos, .atividade2 h3, .atividade2 h2, .atividade2 h1 {
+  background-color: #8797b1;
+  text-align: center;
+  text-transform: capitalize;
+}
+.atividade2 h1 {
+  color: red;
+}
+.atividade2 h2 {
+  color: blue;
+}
+.atividade2 h3 {
+  color: green;
 }
 
 /*# sourceMappingURL=style.css.map */

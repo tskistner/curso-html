@@ -5,47 +5,75 @@ $cor-quartenario: #5d707f;
 $cor-quinquenario: #66ced7;
 $tamanho-campos: 8px;
 
-div {
-    background-color: $cor-primaria;
-}
-
-h1,h2,h3,p {
-    color: $cor-terciaria;
-}
-
-input {
-    padding: $tamanho-campos;
-    border: 1px solid $cor-quartenario;
-}
-
-button {
-    padding: $tamanho-campos;
-    border: 1px solid $cor-quartenario;
-    background-color: $cor-quartenario;
-}
-
-form {
-
-    .campos {
-        border: 3px solid $cor-terciaria;
-        padding: 10px;
+.atividade1 {
+    div {
+        background-color: $cor-primaria;
     }
 
-    .campos:hover{
-        border-color: #66ced7;
+    h1,
+    h2,
+    h3,
+    p {
+        color: $cor-terciaria;
     }
 
     input {
-        @extend .campos;
-    }
-
-    textarea {
-        @extend .campos;
+        padding: $tamanho-campos;
+        border: 1px solid $cor-quartenario;
     }
 
     button {
-        @extend .campos;
-        background-color: $cor-terciaria;
+        padding: $tamanho-campos;
+        border: 1px solid $cor-quartenario;
+        background-color: $cor-quartenario;
     }
 
+    form {
+
+        .campos {
+            border: 3px solid $cor-terciaria;
+            padding: 10px;
+        }
+
+        .campos:hover {
+            border-color: #66ced7;
+        }
+
+        input {
+            @extend .campos;
+        }
+
+        textarea {
+            @extend .campos;
+        }
+
+        button {
+            @extend .campos;
+            background-color: $cor-terciaria;
+        }
+
+    }
+}
+
+.atividade2 {
+    .titulos {
+        background-color: $cor-secundaria;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    h1 {
+        @extend .titulos;
+        color: red;
+    }
+
+    h2 {
+        @extend .titulos;
+        color: blue;
+    }
+
+    h3 {
+        @extend .titulos;
+        color: green;
+    }
 }
