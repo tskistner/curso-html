@@ -1,0 +1,174 @@
+.caixa { /*Classe estrutural*/
+    width: 20%;
+    height: 40vh;
+    margin: 10px;
+    float: left;
+    padding: 20px;
+}
+
+.caixa-azul {/*Modificador*/
+    background-color: rgb(0, 136, 255);
+    border: 2px solid blue;
+}
+
+.caixa-roxo {/*Modificador*/
+    background-color: rgb(98, 0, 255);
+    border: 2px solid rgb(22, 2, 37);
+}
+
+.caixa-rosa {/*Modificador*/
+    background-color: rgb(228, 154, 201);
+    border: 2px solid palevioletred;
+}
+
+.secoes {
+    border-bottom: 2px dashed #6200ff;
+    min-height: 60vh;
+}
+
+.campo {
+    padding: 5px;
+    border: 1px solid purple;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.botao {
+    padding: 5px;
+    background-color: purple;
+    min-width: 180px;
+    border: 1px solid purple;
+    border-radius: 5px;
+}
+
+.formulario {
+    margin-left: 50%;
+}
+
+.imagem-formulario {
+    margin-left: 5%;
+    width: 100px;
+    height: 100px;
+}
+
+.caixa-bloco {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    color:white;
+}
+
+.bloco {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color:#6200ff;
+    padding: 30px;
+}
+
+.menu a:hover {
+    background-color: bisque;
+}
+
+.menu-composto {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    min-height: 300px;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #6200ff;
+    border-radius: 10px;
+    color:#6200ff;
+    font-size: large;
+    font-weight: bold;
+}
+
+.card img {
+    width: 200px;
+    height: 250px;
+}
+
+.card button {
+    padding: 10px 30px 10px 30px;
+    color: white;
+    background-color: #6200ff;
+    border: 1px solid #6200ff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.bloco-linha {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;    
+    flex-wrap: wrap;
+}
+
+.caixa-estatica {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    position: static;
+}
+
+.caixa-relativa {
+    width: 200px;
+    height: 200px;
+    border: 1px solid purple;
+    position: relative;
+    top: 20px;
+    bottom: 50px;
+    left: 100px;
+    right: 70px;
+}
+
+.caixa-fixa {
+    width: 200px;
+    height: 200px;
+    border: 1px solid blue;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: beige;
+    z-index: 1;
+}
+
+.caixa-grudada {
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    position: sticky;
+    top: 0;
+    background-color: beige;
+}
+
+.caixa-absoluta {
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgb(0, 179, 255);
+    position: absolute;
+    bottom: 50px;
+}

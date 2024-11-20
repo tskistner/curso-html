@@ -1,0 +1,51 @@
+$cor-primaria: #b6b4d4;
+$cor-secundaria: #8797b1;
+$cor-terciaria: #6e8a96;
+$cor-quartenario: #5d707f;
+$cor-quinquenario: #66ced7;
+$tamanho-campos: 8px;
+
+div {
+    background-color: $cor-primaria;
+}
+
+h1,h2,h3,p {
+    color: $cor-terciaria;
+}
+
+input {
+    padding: $tamanho-campos;
+    border: 1px solid $cor-quartenario;
+}
+
+button {
+    padding: $tamanho-campos;
+    border: 1px solid $cor-quartenario;
+    background-color: $cor-quartenario;
+}
+
+form {
+
+    .campos {
+        border: 3px solid $cor-terciaria;
+        padding: 10px;
+    }
+
+    .campos:hover{
+        border-color: #66ced7;
+    }
+
+    input {
+        @extend .campos;
+    }
+
+    textarea {
+        @extend .campos;
+    }
+
+    button {
+        @extend .campos;
+        background-color: $cor-terciaria;
+    }
+
+}

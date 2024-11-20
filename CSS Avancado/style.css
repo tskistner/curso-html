@@ -1,0 +1,31 @@
+div {
+  background-color: #b6b4d4;
+}
+
+h1, h2, h3, p {
+  color: #6e8a96;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #5d707f;
+}
+
+button {
+  padding: 8px;
+  border: 1px solid #5d707f;
+  background-color: #5d707f;
+}
+
+form .campos, form button, form textarea, form input {
+  border: 3px solid #6e8a96;
+  padding: 10px;
+}
+form .campos:hover, form button:hover, form textarea:hover, form input:hover {
+  border-color: #66ced7;
+}
+form button {
+  background-color: #6e8a96;
+}
+
+/*# sourceMappingURL=style.css.map */

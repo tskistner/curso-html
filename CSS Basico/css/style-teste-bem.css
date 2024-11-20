@@ -1,0 +1,51 @@
+.cabecalho {
+    border-bottom: 3px solid gray;
+    background-color: violet;
+    border-radius: 3%;
+}
+
+.cabecalho__imagem {
+}
+
+.cabecalho__menu {
+}
+
+.cabecalho__lista {
+}
+
+.cabecalho__lista--central {
+}
+
+.atentado {    
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXOWlGcyjKQG_PwHaashU-S7K4b8FSgZgxZg&s");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.atentado__titulo {
+    opacity: 0.8;
+    width: 10%;
+    border: 1px solid gray;
+    border-radius: 25px;
+    background-color: gray;
+}
+
+.atentado__paragrafo {
+    color: cadetblue;
+}
+
+.atentado__paragrafo--corRosa {
+
+}
+
+.atentado__paragrafo--corVerde {
+
+}
+
+.sobreMim {
+
+}
+
+.sobreMim__titulo {
+
+}
