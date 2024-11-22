@@ -77,3 +77,50 @@ $tamanho-campos: 8px;
         color: green;
     }
 }
+
+.atividadeHeranca {
+
+    $cor-botao-primario: green;
+    $cor-botao-primario-escuro: darken($cor-botao-primario, 7%);
+    $cor-botao-perigo: red;
+    $cor-botao-alerta: orange;
+
+    .botao {
+        padding: 10px;
+        text-transform: uppercase;
+    }
+
+    .botao-primario {
+        @extend .botao;
+        background-color: $cor-botao-primario;
+        border-color: $cor-botao-primario;
+    }
+
+    .botao-primario:hover {
+        background-color: $cor-botao-primario-escuro;
+        border-color: $cor-botao-primario-escuro;
+    }
+
+    .botao-perigo {
+        @extend .botao;
+        background-color: $cor-botao-perigo;
+        border-color: $cor-botao-perigo;
+    }
+
+    .botao-perigo:hover {
+        background-color: lighten($cor-botao-perigo, 30%);
+        border-color: lighten($cor-botao-perigo, 30%);
+    }
+
+    .botao-alerta {
+        @extend .botao;
+        background-color: $cor-botao-alerta;
+        border-color: $cor-botao-alerta;
+    }
+
+    .botao-alerta:hover {
+        background-color: darken($cor-botao-alerta, 5%);
+        border-color: darken($cor-botao-alerta, 5%);
+    }
+    
+}

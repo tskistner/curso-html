@@ -1,0 +1,39 @@
+.display-flex, nav ul, nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  nav img {
+    height: 70px;
+    width: 70px;
+  }
+  nav li {
+    list-style: none;
+    padding: 15px;
+  }
+  nav a {
+    text-decoration: none;
+    color: purple;
+  }
+  
+  main {
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-tech-blue-purple-gradient-planet-starry-sky-background-skyplanetgradientgalaxy-image_49326.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main input, main button {
+    padding: 15px;
+    border-color: purple;
+    color: white;
+    border-radius: 5px;
+  }
+  main button {
+    background-color: purple;
+  }
