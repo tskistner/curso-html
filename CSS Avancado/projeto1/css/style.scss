@@ -1,51 +1,51 @@
-.display-flex {
+$cor-secundaria: #d07c7c;
+$cor-primaria: #a16161;
+$cor-terciaria: #84258b;
+
+@mixin display-flex($direction, $justify) {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: $direction;
+    justify-content: $justify;
 }
 
-nav {
-    @extend .display-flex;
 
+nav {    
+    @include display-flex(row, space-around);
     img {
-        height: 70px;
         width: 70px;
+        height: 70px;
     }
-
     ul {
-        @extend .display-flex;
+        @include display-flex(row, space-around);
     }
-
     li {
         list-style: none;
-        padding: 15px;
+        padding: 20px;
     }
-
     a {
         text-decoration: none;
-        color: purple;
+        color: $cor-primaria;
     }
 }
-
 main {
-    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-tech-blue-purple-gradient-planet-starry-sky-background-skyplanetgradientgalaxy-image_49326.jpg");
+    background-image: url("https://static.vecteezy.com/ti/vetor-gratis/p1/13446367-chip-eletronico-de-tecnologia-digital-conceito-de-fundo-azul-rosa-hardware-eletrico-de-computador-microprocessador-de-memoria-ram-cpu-futuro-cibernetico-futurista-tecnologia-de-rede-de-big-data-abstrata-ilustracaoial-vetor.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 500px;
     text-align: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;  
+    margin-left: 10%;
+    margin-right: 10%;
+    @include display-flex(column, center);
+}
 
-    input, button {
-        padding: 15px;
-        border-color: purple;
-        color: white;
-        border-radius: 5px;
-    }
+.ultimo-conteudo-adc {
+    table {
+        width: 100%;
 
-    button {        
-        background-color: purple;
+        th {
+            border-bottom: 1px solid $cor-secundaria;
+            color: $cor-terciaria;
+        }
     }
 }

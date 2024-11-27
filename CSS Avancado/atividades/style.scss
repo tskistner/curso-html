@@ -124,3 +124,13 @@ $tamanho-campos: 8px;
     }
     
 }
+
+.atividadeMixin {
+    @mixin card ($corFundo) {
+        background-color: $corFundo;
+    }
+
+    .card-primario {
+        @include card(purple);
+    }
+}
