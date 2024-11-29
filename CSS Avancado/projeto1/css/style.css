@@ -35,10 +35,80 @@ main {
   justify-content: center;
 }
 
+.ultimo-conteudo-adc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  */
+}
+.ultimo-conteudo-adc h2 {
+  text-align: center;
+  color: #a16161;
+}
 .ultimo-conteudo-adc table {
   width: 100%;
+  text-align: center;
+  color: #26419e;
 }
 .ultimo-conteudo-adc table th {
-  border-bottom: 1px solid #d07c7c;
-  color: #84258b;
+  padding: 10px;
+  border-bottom: 2px solid #b8becd;
+}
+.ultimo-conteudo-adc table td {
+  padding: 10px;
+  border-bottom: 1px solid #b8becd;
+}
+.ultimo-conteudo-adc table .assunto {
+  display: flex;
+  justify-content: center;
+}
+.ultimo-conteudo-adc table .assunto .assuntoWeb {
+  background-color: hotpink;
+  min-width: 80%;
+  color: white;
+  text-transform: uppercase;
+}
+.ultimo-conteudo-adc table .assunto .assuntoDesktop {
+  background-color: #5767e0;
+  min-width: 80%;
+  color: white;
+  text-transform: uppercase;
+}
+.ultimo-conteudo-adc table .assunto .assuntoRedes {
+  background-color: #401468;
+  min-width: 80%;
+  color: white;
+  text-transform: uppercase;
+}
+.ultimo-conteudo-adc table .score {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.ultimo-conteudo-adc table .score .like {
+  color: green;
+}
+.ultimo-conteudo-adc table .score .dislike {
+  color: red;
+}
+.ultimo-conteudo-adc table .score .star {
+  color: goldenrod;
+}
+.ultimo-conteudo-adc .botao {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.ultimo-conteudo-adc .botao button {
+  padding: 15px;
+  background-color: white;
+  border: 1px solid #a16161;
+  color: #a16161;
+  border-radius: 10px;
+  text-transform: uppercase;
 }

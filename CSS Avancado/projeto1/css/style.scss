@@ -9,43 +9,128 @@ $cor-terciaria: #84258b;
 }
 
 
-nav {    
+nav {
     @include display-flex(row, space-around);
+
     img {
         width: 70px;
         height: 70px;
     }
+
     ul {
         @include display-flex(row, space-around);
     }
+
     li {
         list-style: none;
         padding: 20px;
     }
+
     a {
         text-decoration: none;
         color: $cor-primaria;
     }
 }
+
 main {
     background-image: url("https://static.vecteezy.com/ti/vetor-gratis/p1/13446367-chip-eletronico-de-tecnologia-digital-conceito-de-fundo-azul-rosa-hardware-eletrico-de-computador-microprocessador-de-memoria-ram-cpu-futuro-cibernetico-futurista-tecnologia-de-rede-de-big-data-abstrata-ilustracaoial-vetor.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 500px;
     text-align: center;
-    align-items: center;  
+    align-items: center;
     margin-left: 10%;
     margin-right: 10%;
     @include display-flex(column, center);
 }
 
 .ultimo-conteudo-adc {
+    @include display-flex(column, center);
+
+    /*
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    */
+
+    h2 {
+        text-align: center;
+        color: $cor-primaria;
+    }
+
     table {
         width: 100%;
+        text-align: center;
+        color: #26419e;
+
+        @mixin linha($tmBorda) {
+            padding: 10px;
+            border-bottom: $tmBorda solid #b8becd;
+        }
 
         th {
-            border-bottom: 1px solid $cor-secundaria;
-            color: $cor-terciaria;
+            @include linha(2px);
+        }
+
+        td {
+            @include linha(1px);
+        }
+
+        .assunto {
+            display: flex;
+            justify-content: center;
+
+            @mixin assuntoPadrao($corFundo) {
+                background-color: $corFundo;
+                min-width: 80%;
+                color: white;
+                text-transform: uppercase;
+            }
+
+            .assuntoWeb {
+                @include assuntoPadrao(hotpink);
+            }
+
+            .assuntoDesktop {
+                @include assuntoPadrao(#5767e0);
+            }
+
+            .assuntoRedes {
+                @include assuntoPadrao(#401468);
+            }
+        }
+
+        .score {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .like {
+                color: green;
+            }
+
+            .dislike {
+                color: red;
+            }
+
+            .star {
+                color: goldenrod;
+            }
         }
     }
+
+    .botao {
+        @include display-flex(row, center);
+
+        button {
+            padding: 15px;
+            background-color: white;
+            border: 1px solid $cor-primaria;
+            color: $cor-primaria;
+            border-radius: 10px;
+            text-transform: uppercase;
+        }
+    }
+
 }

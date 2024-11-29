@@ -122,7 +122,7 @@ $tamanho-campos: 8px;
         background-color: darken($cor-botao-alerta, 5%);
         border-color: darken($cor-botao-alerta, 5%);
     }
-    
+
 }
 
 .atividadeMixin {
@@ -132,5 +132,27 @@ $tamanho-campos: 8px;
 
     .card-primario {
         @include card(purple);
+    }
+}
+
+.loops {
+    $tamanoTela: 12;
+
+    @for $i from 1 through $tamanoTela {
+        .col-#{$i} {
+            width: calc(100% / $tamanoTela) * $i;
+        }
+    }
+
+    div {
+        height: 50px;
+        background-color: #6e8a96;
+        border: 2px solid white;
+    }
+
+    .linha {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
     }
 }
