@@ -156,3 +156,15 @@ $tamanho-campos: 8px;
         background-color: white;
     }
 }
+
+.animacoes {
+    button {
+        background-color: #66ced7;
+        transition: background-color 1s, transform 1s;
+    }
+
+    button:hover {
+        background-color: brown;
+        transform: scale(1.5);
+    }
+}
