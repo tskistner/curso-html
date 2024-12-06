@@ -130,3 +130,53 @@
   background-color: brown;
   transform: scale(1.5);
 }
+@keyframes complex {
+  0% {
+    background-color: red;
+    transform: scale(1);
+  }
+  25% {
+    background-color: orange;
+    transform: scale(1.2);
+  }
+  50% {
+    background-color: yellow;
+    transform: scale(1.5);
+  }
+  75% {
+    background-color: green;
+    transform: scale(1.2);
+  }
+  100% {
+    background-color: red;
+    transform: scale(1);
+  }
+}
+.animacoes .mudaCor {
+  animation: complex 4s infinite;
+  height: 50px;
+  width: 50px;
+  background-color: #4CAF50;
+}
+ 
+@keyframes rotate-scale-down-diag-2 {
+  0% {
+    -webkit-transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+            transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+  }
+  50% {
+    -webkit-transform: scale(0.5) rotate3d(-1, 1, 0, 180deg);
+            transform: scale(0.5) rotate3d(-1, 1, 0, 180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotate3d(-1, 1, 0, 360deg);
+            transform: scale(1) rotate3d(-1, 1, 0, 360deg);
+  }
+}
+
+.animista {
+  animation: rotate-scale-down-diag-2 2s infinite;
+  height: 50px;
+  width: 50px;
+  background-color: #4CAF50;
+}

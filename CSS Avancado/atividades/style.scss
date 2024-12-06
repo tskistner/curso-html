@@ -167,4 +167,38 @@ $tamanho-campos: 8px;
         background-color: brown;
         transform: scale(1.5);
     }
+
+    @keyframes complex {
+        0% {
+            background-color: red;
+            transform: scale(1);
+        }
+
+        25% {
+            background-color: orange;
+            transform: scale(1.2);
+        }
+
+        50% {
+            background-color: yellow;
+            transform: scale(1.5);
+        }
+
+        75% {
+            background-color: green;
+            transform: scale(1.2);
+        }
+
+        100% {
+            background-color: red;
+            transform: scale(1);
+        }
+    }
+
+    div {
+        animation: complex 4s infinite;
+        height: 50px;
+        width: 50px;
+        background-color: #4CAF50;
+    }
 }
