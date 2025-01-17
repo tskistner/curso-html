@@ -79,3 +79,13 @@ function calcular() {
     alert('Resultado: ' + resultado);
     limpar();
 }
+
+function verificarSono() {
+    const horasSono = prompt('Informe a quantidade de horas que você dorme em média:');
+    const qtdMinimaHorasSono = 8;
+    if (horasSono < qtdMinimaHorasSono) {
+        alert('Você está dormindo muito pouco.');
+    } else {
+        alert('Você está dormindo o suficiente. Parabéns!');
+    }
+}
