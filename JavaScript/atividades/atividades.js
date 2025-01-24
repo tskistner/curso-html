@@ -79,6 +79,30 @@ function calcular() {
     limpar();
 }
 
+function calcularComSwitch() {
+    valor1 = parseFloat(valor1);
+    valor2 = parseFloat(valor2);
+    let resultado;
+    switch (operacao) {
+        case '+':
+            resultado = valor1 + valor2;
+            break;
+        case '-':
+            resultado = valor1 - valor2;
+            break;
+        case '*':
+            resultado = valor1 * valor2;
+            break;
+        case '/':
+            resultado = valor1 / valor2;
+            break;
+        default: 
+
+    }
+    alert('Resultado: ' + resultado);
+    limpar();
+}
+
 function identificarSono() {
     const qtdHoras = prompt('Quantas horas você tem dormido por noite?');
     const horasMinimasSono = 8;
@@ -90,7 +114,7 @@ function identificarSono() {
 }
 
 function horaFormato12() {
-    const qtdHora = prompt('Que horas são?');
+    const qtdHora = parseInt(prompt('Que horas são?'));
 
     if (qtdHora > 12) {
         alert(qtdHora - 12 + ' p.m');
@@ -163,5 +187,88 @@ function identificarNomeUsuario() {
         identificarNomeUsuario();
     } else {
         alert("Entrada liberada!");
+    }
+}
+
+function calcularIMC() {
+    const peso = prompt('Informe seu peso');
+    let altura = prompt('Informe sua altura');
+
+    //Verificando se está em centímetros para converter para metros
+    if (altura.indexOf('.') == -1 && altura.length > 1) {
+        altura = altura / 100;
+    }
+    const imc = peso / (altura * altura);
+
+    if (imc <= 18.5) {
+        alert('Você está abaixo do peso');
+    } else if (imc > 18.5 && imc <= 25) {
+        alert('Você está no peso normal');
+    } else if (imc > 25 && imc <= 30) {
+        alert('Você está acima do peso');
+    } else {
+        alert('Você está obeso');
+    }
+}
+
+function converterDiaSemana() {
+    const diaSemana = parseInt(prompt('Informe o dia da semana em número'));
+    const DOMINGO = 1, SEGUNDA = 2, TERCA = 3, QUARTA = 4 , QUINTA = 5, SEXTA = 6, SABADO = 7;
+    switch (diaSemana) {
+        case DOMINGO: {
+            alert('Domingo');
+            break;
+        }
+        case SEGUNDA: {
+            alert('Segunda-feira');
+            break;
+        }
+        case TERCA: {
+            alert('Terça-feira');
+            break;
+        }
+        case QUARTA: {
+            alert('Quarta-feira');
+            break;
+        }
+        case QUINTA: {
+            alert('Quinta-feira');
+            break;
+        }
+        case SEXTA: {
+            alert('Sexta-feira');
+            break;
+        }
+        case SABADO: {
+            alert('Sábado');
+            break;
+        }
+        default: {
+            alert('Dia inválido');
+        }
+    }
+}
+
+function calcularPrecoProduto(preco) {
+    const preco = parseFloat(prompt('Informe o valor da sua compra.'));
+    let valorTotal = calcularFormaPagamento(preco);
+}
+
+function calcularFormaPagamento(preco) {
+    const formaPgto = parseInt(prompt('Informe a forma de pagamento. \n1 - PIX\n2 - Cartão de débito. \n3- Cartão de débito. \n4 - Boleto.'));
+    const PIX = 1, DEBITO = 2, CREDITO = 3, BOLETO = 4;
+    switch (formaPgto) {
+        case PIX: {
+            return preco - preco * 0.1;
+        }
+        case DEBITO: {
+            return preco - preco * 0.05;
+        }
+        case CREDITO: {
+            return preco + preco * 0.02;
+        }
+        default: {
+            return preco;
+        }
     }
 }
