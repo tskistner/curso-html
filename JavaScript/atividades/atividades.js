@@ -96,7 +96,7 @@ function calcularComSwitch() {
         case '/':
             resultado = valor1 / valor2;
             break;
-        default: 
+        default:
 
     }
     alert('Resultado: ' + resultado);
@@ -213,7 +213,7 @@ function calcularIMC() {
 
 function converterDiaSemana() {
     const diaSemana = parseInt(prompt('Informe o dia da semana em número'));
-    const DOMINGO = 1, SEGUNDA = 2, TERCA = 3, QUARTA = 4 , QUINTA = 5, SEXTA = 6, SABADO = 7;
+    const DOMINGO = 1, SEGUNDA = 2, TERCA = 3, QUARTA = 4, QUINTA = 5, SEXTA = 6, SABADO = 7;
     switch (diaSemana) {
         case DOMINGO: {
             alert('Domingo');
@@ -253,13 +253,13 @@ function calcularValorTotal() {
     const valorProduto = parseFloat(prompt('Informe o valor total dos produtos'));
     //calcular o valor da forma de pagamento
     let total = valorProduto + calcularFormaPgto(valorProduto);
-    console.log('Total com forma de pagamento: '+total);
+    console.log('Total com forma de pagamento: ' + total);
     //calcular o valor do desconto (se houver)
     total -= calcularDesconto(valorProduto);
-    console.log('Total com cupom: '+total);
+    console.log('Total com cupom: ' + total);
     //calcular o valor do frete
     total += calcularFrete();
-    alert('Total da compra: R$'+total);
+    alert('Total da compra: R$' + total);
 }
 
 function calcularFormaPgto(vlProduto) {
@@ -279,7 +279,7 @@ function calcularFormaPgto(vlProduto) {
 
 function calcularDesconto(vlProduto) {
     const cupom = prompt('Você possui algum cupom? Se sim, digite-o');
-    let valorCupom = cupom.substring(0,2);
+    let valorCupom = cupom.substring(0, 2);
     if (verificarCupomValido(valorCupom)) {
         //aplicar o desconto
         return vlProduto * (valorCupom / 100);
@@ -331,26 +331,118 @@ function loopDezaUm() {
 
 function loopParesAteDez() {
     console.log('Loop com for:');
-    for (let i = 0; i <= 10 ; i+=2) {
+    for (let i = 0; i <= 10; i += 2) {
         console.log(i)
     }
     console.log('Loop com while:');
     let c = 0;
     while (c <= 10) {
         console.log(c);
-        c+=2;
+        c += 2;
     }
 }
 
 function loopImparesAteDez() {
     console.log('Loop com for:');
-    for (let i = 1; i <= 10 ; i+=2) {
+    for (let i = 1; i <= 10; i += 2) {
         console.log(i)
     }
     console.log('Loop com while:');
     let c = 1;
     while (c <= 10) {
         console.log(c);
-        c+=2;
+        c += 2;
+    }
+}
+
+function whileBreakEContinue() {
+    let numero = 0;
+    while (numero != 7) {
+        numero = prompt('Informe um número');
+        if (numero == 5) {
+            console.log('Achou um easter egg e pode sair do loop');
+            break;
+        } else if (numero == 3) {
+            console.log("Não imprime o número");
+            continue;
+        }
+        console.log(numero);
+
+    }
+}
+
+function pedirNota() {
+    let nota = -1;
+    while (nota < 0 || nota > 10) {
+        nota = prompt('Informe uma nota entre 0 e 10.');
+        if (nota < 0 || nota > 10) {
+            alert('Nota inválida.');
+        }
+    }
+    alert('Nota válida');
+}
+
+function pedirNotaWhileTrue() {
+    let nota;
+    while (true) {
+        nota = prompt('Informe uma nota entre 0 e 10.');
+        if (nota < 0 || nota > 10) {
+            alert('Nota inválida.');
+        } else {
+            break;
+        }
+    }
+    alert('Nota válida');
+}
+
+function realizarLogin() {
+    const USUARIO = 'tamires@@';
+    const SENHA = '123';
+    let usuarioLogin, senhaLogin;
+    while (usuarioLogin != USUARIO || senhaLogin != SENHA) {
+        usuarioLogin = prompt('Informe seu usuário de login');
+        senhaLogin = prompt('Informe sua senha');
+    }
+    alert('Login realizado');
+}
+
+function realizarLoginWTrue() {
+    const USUARIO = 'tamires@@';
+    const SENHA = '123';
+    let usuarioLogin, senhaLogin;
+    while (true) {
+        usuarioLogin = prompt('Informe seu usuário de login');
+        senhaLogin = prompt('Informe sua senha');
+        if (usuarioLogin != USUARIO || senhaLogin != SENHA) {
+            alert('Usuário ou senha inválidos');
+        } else {
+            break;
+        }
+    }
+    alert('Login realizado');
+}
+
+function solicitarPalavrasWT() {
+    while (true) {
+        const palavra = prompt('Informe uma palavra');
+        if (palavra.length < 3) {
+            console.log('A palavra '+palavra+' foi desconsiderada pois possui menos de 3 caracteres.');
+            continue;
+        } else if (palavra == 'sair') {
+            break;
+        } 
+        console.log('Palavra válida: '+palavra);
+    }
+}
+
+function solicitarPalavras() {
+    let palavra;
+    while (palavra != 'sair') {
+        palavra = prompt('Informe uma palavra');
+        if (palavra.length < 3) {
+            console.log('A palavra '+palavra+' foi desconsiderada pois possui menos de 3 caracteres.');
+            continue;
+        } 
+        console.log('Palavra válida: '+palavra);
     }
 }
