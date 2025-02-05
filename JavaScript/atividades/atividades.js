@@ -426,12 +426,12 @@ function solicitarPalavrasWT() {
     while (true) {
         const palavra = prompt('Informe uma palavra');
         if (palavra.length < 3) {
-            console.log('A palavra '+palavra+' foi desconsiderada pois possui menos de 3 caracteres.');
+            console.log('A palavra ' + palavra + ' foi desconsiderada pois possui menos de 3 caracteres.');
             continue;
         } else if (palavra == 'sair') {
             break;
-        } 
-        console.log('Palavra válida: '+palavra);
+        }
+        console.log('Palavra válida: ' + palavra);
     }
 }
 
@@ -440,9 +440,43 @@ function solicitarPalavras() {
     while (palavra != 'sair') {
         palavra = prompt('Informe uma palavra');
         if (palavra.length < 3) {
-            console.log('A palavra '+palavra+' foi desconsiderada pois possui menos de 3 caracteres.');
+            console.log('A palavra ' + palavra + ' foi desconsiderada pois possui menos de 3 caracteres.');
             continue;
-        } 
-        console.log('Palavra válida: '+palavra);
+        }
+        console.log('Palavra válida: ' + palavra);
     }
+}
+
+function solicitarNumeros() {
+    let numeros = [];
+    for (let i = 0; i < 10; i++) {
+        numeros.push(prompt('Informe um número'));
+    }
+    console.log(numeros);
+}
+
+function realizarLoginUsuarios() {
+    const usuarios = ['tamires@@', 'marcos123', 'gabi77'];
+    const senhas = ['123', 'aab4', 'a57'];
+    let usuarioLogin = prompt('Informe seu usuário de login');
+    let senhaLogin = prompt('Informe sua senha');
+    let fezLogin = false;
+    for (let i = 0; i < usuarios.length; i++) {
+        if (usuarios[i] == usuarioLogin && senhas[i] == senhaLogin) {
+            fezLogin = true;
+            alert('Login realizado');
+            break;
+        }
+    }
+    if (!fezLogin) {
+        alert('Usuário ou senha inválido. Tente novamente');
+    }
+}
+
+function contarLetras() {
+    const animais = ['gato', 'cachorro', 'girafa', 'jaguatirica'];
+    animais.forEach(animal => {
+        console.log('A palavra '+animal+' tem '+animal.length+' letras');
+        alert('A palavra '+animal+' tem '+animal.length+' letras');
+    })
 }
