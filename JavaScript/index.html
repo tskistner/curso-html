@@ -8,13 +8,17 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <h1>Bem-Vindo</h1>
-    <button onclick="alertar()">Checar promoções</button>
-    <button onclick="teste()">Teste</button>
-<!-- 
-    Comentário HTML
--->
-    <button onclick="testeFor() ">Executar for</button>
-    <button onclick="testeWhile()">Executar while</button>
+    <br/>
+    <input type="text" id="campoTexto" placeholder="Digite um texto aqui">
+    <button onclick="alterarTexto()">Enviar</button>
+    <div id="minhaDiv">
+        <p>Teste div com Javascript</p>
+    </div>
+    <br/>
+    <input type="number" id="resultadoConta" placeholder="Quanto é 2 + 2?">
+    <button onclick="validarResultado()">Enviar</button>
+    <div id="resultado">
+        <p>Resultado</p>
+    </div>
 </body>
 </html>
