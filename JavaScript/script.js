@@ -44,8 +44,8 @@ function alterarTexto() {
 }
 
 function validarResultado() {
-    let resultado = document.getElementById('resultado');
-    let resultadoConta = document.getElementById('resultadoConta');
+    const resultado = document.getElementById('resultado');
+    const resultadoConta = document.getElementById('resultadoConta');
     const RESULTADOVALIDO = 4;
     if (resultadoConta.value == RESULTADOVALIDO) {
         resultado.innerHTML = '<p class="sucesso">Parabéns, você acertou!</p>';

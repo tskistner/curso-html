@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-Br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +9,21 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <br/>
+    <h1>Bem-Vindo</h1>
+    <button onclick="alertar()">Checar promoções</button>
+    <button onclick="teste()">Teste</button>
+    <!-- 
+    Comentário HTML
+-->
+    <button onclick="testeFor() ">Executar for</button>
+    <button onclick="testeWhile()">Executar while</button>
+    <br />
     <input type="text" id="campoTexto" placeholder="Digite um texto aqui">
     <button onclick="alterarTexto()">Enviar</button>
-    <div id="minhaDiv">
+    <div id="minhaDiv" name="teste">
         <p>Teste div com Javascript</p>
     </div>
-    <br/>
+    <br />
     <input type="number" id="resultadoConta" placeholder="Quanto é 2 + 2?">
     <button onclick="validarResultado()">Enviar</button>
     <div id="resultado">
