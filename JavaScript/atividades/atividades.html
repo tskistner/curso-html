@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividades</title>
     <script src="atividades.js"></script>
+    <link rel="stylesheet" href="atividades.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
@@ -116,6 +118,28 @@
             <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
         </svg>
     </div>
+
+    <br/>
+    <h2>Esconder elemento</h2>
+    <button onclick="esconderTexto()">Esconder texto</button>
+    <button onclick="mostrarTexto()">Mostrar texto</button>
+    <button onclick="esconderMostrarTexto()" id="bt-mostra-esconde" class="bt-escondido">Esconder texto</button>
+    <p id="texto-esconder">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos eum ipsam inventore dicta tempore consequuntur cumque exercitationem. Expedita itaque rem labore ipsa veniam nesciunt laborum, explicabo corporis quo facilis commodi.
+    </p>
+
+    <br/>
+    <h2>Criar elementos</h2>
+    <input type="text" id="texto-usuario" placeholder="Informe um texto">
+    <button onclick="incluirTexto()">Enviar</button>
+    <button onclick="limpar()">Limpar</button>
+    <div id="conteudo-texto">
+    </div>
+
+    <br/>
+    <h2>Requisição com axios</h2>
+    <button onclick="listarUsuarios()">Listar Usuarios</button>
+    <div id="lista-usuarios"></div>
 </body>
 
 </html>

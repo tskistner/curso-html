@@ -506,3 +506,53 @@ function visualizarSenha() {
         +'</svg>';
     }
 }
+
+function esconderTexto() {
+    const textoEsconder = document.getElementById('texto-esconder');
+    textoEsconder.classList.add('escondido');
+}
+
+function mostrarTexto() {
+    const textoEsconder = document.getElementById('texto-esconder');
+    textoEsconder.classList.remove('escondido');
+}
+
+function esconderMostrarTexto() {
+    const btMostraEsconde = document.getElementById('bt-mostra-esconde');
+    if (btMostraEsconde.innerText == 'Esconder texto') {
+        btMostraEsconde.innerText = 'Mostrar texto';
+        esconderTexto();
+        btMostraEsconde.classList.remove('bt-escondido');
+        btMostraEsconde.classList.add('bt-mostrar');
+    } else {
+        btMostraEsconde.innerText = 'Esconder texto';
+        mostrarTexto();
+        btMostraEsconde.classList.add('bt-escondido');
+        btMostraEsconde.classList.remove('bt-mostrar');
+    }
+}
+
+function incluirTexto() {
+    const textoUsuario = document.getElementById('texto-usuario');
+    const conteudoTexto = document.getElementById('conteudo-texto');
+    const texto = document.createElement('p');
+    texto.innerText = textoUsuario.value;
+    conteudoTexto.appendChild(texto);
+    textoUsuario.value = '';
+}
+
+function limpar() {
+    const conteudoTexto = document.getElementById('conteudo-texto');
+    conteudoTexto.innerHTML = '';
+}
+
+function listarUsuarios() {
+    const listaUsuarios = document.getElementById('lista-usuarios');
+    axios.get('https://jsonplaceholder.typicode.com/users').then(retorno => {
+        retorno.data.forEach(usuario => {
+            const p = document.createElement('p');
+            p.innerText = usuario.name;
+            listaUsuarios.appendChild(p);
+        })
+    });
+}
